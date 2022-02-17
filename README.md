@@ -17,7 +17,7 @@ Xingyi Guo1,2 †, *, Jie Ping1†, Yaohua Yang1†, Xiao-ou Shu1, Wanqing Wen1,
 
 ### R1. Whole genome sequencing (WGS) in blood samples and RNA sequencing (RNA-seq) data generated in normal tissues from the GTEx project (version 8).  
 
-### R2. Summary statistics of GWAS data of European descendants for breast, ovary, prostate, and lung cancers.
+### R2. Summary statistics of GWAS data of European descendants for breast, ovary, prostate, colorectal, lung, and pancreatic cancer.
 
 
 
