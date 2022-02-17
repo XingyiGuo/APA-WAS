@@ -23,7 +23,9 @@ Xingyi Guo1,2 †, *, Jie Ping1†, Yaohua Yang1†, Xiao-ou Shu1, Wanqing Wen1,
 
 <a name="Pipeline"/>
 
-# APA-WAS Pipeline (using example data for demo) 
+# APA-WAS Pipeline 
+(We provided example codes to identify candiate susceptiblity gene KDSR for breast cancer) 
+
 ---
 
 ## Prerequisites
@@ -32,15 +34,22 @@ Xingyi Guo1,2 †, *, Jie Ping1†, Yaohua Yang1†, Xiao-ou Shu1, Wanqing Wen1,
 3. `samtools v1.9`
 4. `R v4.0.5`
 5. `PEER https://github.com/PMBio/peer`
-6. `xx`
+6. `USCS tools for extracting data v1.04.00`
+7. `USCS tools for extracting data v1.04.00`
 
 ## Step 1: Preparing GTEx RNA-Seq BAM files from dbGap
 
-downloaded RNA sequencing (RNA-seq) data in normal tissues from the GTEx project 
+To download RNA sequencing data in normal tissues from the GTEx project via Anvil Gen3 
 
-
+```bash
+check - gen3-client 
+curl https://api.github.com/repos/uc-cdis/cdis-data-client/releases/latest | grep browser_download_url.*linux |  cut -d '"' -f 4 | wget -qi -
+./gen3-client configure --profile=AnVIL --cred=credentials.json --apiendpoint=https://gen3.theanvil.io
+./gen3-client download-multiple --profile=AnVIL --manifest=file-manifest.json --download-path=. --protocol=s3
+```
 
 ## Step 2: Covert BAM files to BedGraph
+
 
 bedtools v2.25.0-119-ga0dc5db
 
@@ -156,7 +165,7 @@ write.table(PDUI_QN, file = "KDSR.PDUI.QN.txt", sep = "\t", quote = F, row.names
 
 ## Step 8: Calculate PEER factors
 
-PEER https://github.com/PMBio/peer
+Please see detailed doucuments of PEER from here: https://github.com/PMBio/peer
 
 ```r
 set.seed(1024)
@@ -199,7 +208,7 @@ PEER_plotModel(model)
 dev.off()
 ```
 
-There is only one gene in the example, so we provide the PEER factors calculated from the entire gene expression data.
+PEER factors calculated from the entire gene expression data.
 
 ## Step 9: Prepare covariates from GTEx data
 
