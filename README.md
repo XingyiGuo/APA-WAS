@@ -26,6 +26,13 @@ Xingyi Guo1,2 †, *, Jie Ping1†, Yaohua Yang1†, Xiao-ou Shu1, Wanqing Wen1,
 # APA-WAS Pipeline (using example data for demo) 
 ---
 
+## Prerequisites
+1. `Python (3 > version >= 2.7)`
+2. `bitarray: 0.8`
+3. `numpy: 1.12`
+4. `pandas: 0.20`
+5. `scipy: 0.18`
+
 ## Step 1: Preparing GTEx RNA-Seq BAM files from dbGap
 
 downloaded RNA sequencing (RNA-seq) data in normal tissues from the GTEx project 
