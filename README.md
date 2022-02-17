@@ -24,7 +24,7 @@ Xingyi Guo1,2 †, *, Jie Ping1†, Yaohua Yang1†, Xiao-ou Shu1, Wanqing Wen1,
 <a name="Pipeline"/>
 
 # APA-WAS Pipeline 
-We provided example codes and expected results for our reported candiate susceptiblity gene KDSR in breast cancer.
+We provided example codes and expected results for our reported candiate susceptiblity gene, KDSR, in breast cancer.
 
 ---
 
