@@ -23,15 +23,14 @@ Xingyi Guo1,2 †, *, Jie Ping1†, Yaohua Yang1†, Xiao-ou Shu1, Wanqing Wen1,
 
 <a name="Pipeline"/>
 
-# Pipeline 
+# APA-WAS Pipeline (using example data for demo) 
 ---
 
+## Step 1: Preparing GTEx RNA-Seq BAM files from dbGap
+
+downloaded RNA sequencing (RNA-seq) data in normal tissues from the GTEx project 
 
 
-
-# APA-WAS Example
-
-## Step 1: Download GTEx RNA-Seq BAM files from dbGap
 
 ## Step 2: Covert BAM files to BedGraph
 
