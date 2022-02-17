@@ -27,14 +27,8 @@ Xingyi Guo1,2 †, *, Jie Ping1†, Yaohua Yang1†, Xiao-ou Shu1, Wanqing Wen1,
 ---
 
 
-## step1: Quantification of APA events in normal breast, ovary, prostate, colon transverse, pancreas, lung and tissues 
 
 
-## step2: Model building of genetically predicated APA levels 
-
-## step3: MAssociation analyses between genetically predicted APA levels and cancer risk
-
-More information see R scripts listed in our main directory
 # APA-WAS Example
 
 ## Step 1: Download GTEx RNA-Seq BAM files from dbGap
@@ -206,5 +200,5 @@ Check our 5.Prepare_Covariates.R code
 
 ## Step 10: Run APA-WAS
 
-
+Deatailed see R scripts have been listed in the directory - "Scrict/"
 
