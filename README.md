@@ -36,7 +36,7 @@ We provided example codes and expected results for our reported candiate suscept
 5. `PEER https://github.com/PMBio/peer`
 6. `USCS tools for extracting data v1.04.00`
 
-## Step 1: Preparing GTEx RNA-Seq BAM files from dbGap
+## Step 1: Download BAM files of RNA-seq data in GTEX
 
 To download RNA sequencing data in normal tissues from the GTEx project via Anvil Gen3 
 
@@ -67,7 +67,7 @@ rm ${SAMPLE}.chr18.bedgraph ${SAMPLE}.chr18.sorted.bedgraph ${SAMPLE}.chr18.bb
 
 CHR_SIZE_FILE is downloaded from UCSC: http://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/chromInfo.txt.gz
 
-## Step 3: Calculate read depth
+## Step 3: Calculate read depth for each sample
 
 samtools v1.9
 
@@ -77,7 +77,7 @@ echo "$wigLoc" >> ${SAMPLE}.depth
 samtools view -c -F 260 ${SAMPLE}.bam >> ${SAMPLE}.depth
 ```
 
-## Step 4: Generate BAM location with depth
+## Step 4: Generate BAM location with depth information
 
 ```bash
 for f in $(ls *.depth)
@@ -112,7 +112,7 @@ echo "sequencing_depth_file=${sequencing_depth_file}" >> ${outDir}/KDSR.configur
 
 ```
 
-## Step 6: Run DaPars2
+## Step 6: Run DaPars2 to generate APA events and levels
 
 Python v2.7.14
 
@@ -133,7 +133,7 @@ cat example/PDUI_chr18/PDUI_result_temp.chr18.txt > example/KDSR.PDUI.txt
 
 ```
 
-## Step 7: Perform Normalization
+## Step 7: Perform Normalization of APA levels
 
 R v4.0.5
 
@@ -162,7 +162,7 @@ write.table(PDUI_QN, file = "KDSR.PDUI.QN.txt", sep = "\t", quote = F, row.names
 
 ```
 
-## Step 8: Calculate PEER factors
+## Step 8: Calculate PEER factors for APA 
 
 Please see detailed doucuments of PEER from here: https://github.com/PMBio/peer
 
@@ -209,14 +209,14 @@ dev.off()
 
 PEER factors calculated from the entire gene expression data.
 
-## Step 9: Prepare covariates from GTEx data
+## Step 9: Prepare covariates using genotype data from GTEx
 
 Implemented in scrpits/5.Prepare_Covariates.R
    ```
     Rscript scrpits/Prepare_Covariates.R
   ```  
 
-## Step 10: Run APA-WAS
+## Step 10: Run assocation analysis based on TWAS framework
 
 ### 10.1. Build model for the APA mark "NM_002035.4|KDSR|chr18|-" using buildmodel.r
 
@@ -267,5 +267,5 @@ Rscript scripts/buildmodel.r
   python scripts/gcta_cojo.py
   ```  
 
-Deatailed see R scripts for each step have been listed in the directory - "scricts/"
+R scripts for each step can be found in the folder, "scricts/"; Example data for each step can be found in the folder, "Example/".
 
