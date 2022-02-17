@@ -1,8 +1,8 @@
 # Large-scale alternative polyadenylation (APA)-wide association studies to identify putative susceptibility genes for cancers of the breast, ovary, prostate, colorectal, lung, and pancreas
 ---
 * [Introduction](#Introduction)
-* [Resource](#Resource)
-* [Pipeline](#Pipeline)
+* [Data Resource](#Resource)
+* [APA-WAS Pipeline](#Pipeline)
 
 <a name="Introduction"/>
 
@@ -13,7 +13,7 @@ In this study, we used RNA-sequencing (RNA-seq) data generated in multiple norma
 Xingyi Guo1,2 †, *, Jie Ping1†, Yaohua Yang1†, Xiao-ou Shu1, Wanqing Wen1, Zhishan Chen1, Ran Tao3, Guochong Jia1, Jingni He4, Qiuyin Cai1, Quan Long4,5, Graham G Giles6,  Rachel Pearlman7,  Gad Rennert8, Pavel Vodicka9, Amanda Phipps10,11, Stephen B Gruber12, Graham Casey13, Ulrike Peters10,11, Jirong Long1, Wei Zheng1, *
 
 
-# Data resources
+# Data Resources
 
 ### R1. Whole genome sequencing (WGS) in blood samples and RNA sequencing (RNA-seq) data generated in normal tissues from the GTEx project (version 8).  
 
@@ -24,7 +24,7 @@ Xingyi Guo1,2 †, *, Jie Ping1†, Yaohua Yang1†, Xiao-ou Shu1, Wanqing Wen1,
 <a name="Pipeline"/>
 
 # APA-WAS Pipeline 
-(We provided example codes to identify candiate susceptiblity gene KDSR for breast cancer) 
+We provided example codes and expected results for our reported candiate susceptiblity gene KDSR in breast cancer.
 
 ---
 
