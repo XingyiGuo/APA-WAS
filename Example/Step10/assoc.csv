@@ -1,0 +1,2 @@
+gene,gene_name,zscore,effect_size,pvalue,var_g,pred_perf_r2,pred_perf_pval,pred_perf_qval,n_snps_used,n_snps_in_cov,n_snps_in_model
+NM_002035.4|KDSR|chr18|-,NM_002035.4|KDSR|chr18|,-4.37694803287107,-0.08249286318057421,1.2035265465073698e-05,0.049022760852532904,0.115097820778364,0.000222034338158345,0,17,17,17

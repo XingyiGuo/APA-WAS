@@ -1,0 +1,26 @@
+PLINK v2.00a3LM 64-bit Intel (11 Oct 2021)
+Options in effect:
+  --bfile /scratch/sbcs/yhyang/Refs/Chr18/chr18
+  --extract rsid
+  --make-bed
+  --out ref1KG
+
+Hostname: sbcs2.vampire
+Working directory: /gpfs52/nobackup/sbcs/yangy23/APA_TWAS/Geno/Breast/Model/Example
+Start time: Thu Feb 17 11:33:38 2022
+
+Random number seed: 1645119218
+257686 MiB RAM detected; reserving 128843 MiB for main workspace.
+Allocated 40766 MiB successfully, after larger attempt(s) failed.
+Using up to 72 threads (change this with --threads).
+503 samples (0 females, 0 males, 503 ambiguous; 503 founders) loaded from
+/scratch/sbcs/yhyang/Refs/Chr18/chr18.fam.
+1841187 variants loaded from /scratch/sbcs/yhyang/Refs/Chr18/chr18.bim.
+Note: No phenotype data present.
+--extract: 17 variants remaining.
+17 variants remaining after main filters.
+Writing ref1KG.fam ... done.
+Writing ref1KG.bim ... done.
+Writing ref1KG.bed ... done.
+
+End time: Thu Feb 17 11:33:39 2022
