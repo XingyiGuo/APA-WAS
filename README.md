@@ -200,5 +200,5 @@ Check our 5.Prepare_Covariates.R code
 
 ## Step 10: Run APA-WAS
 
-Deatailed see R scripts have been listed in the directory - "Scrict/"
+Deatailed see R scripts for each step have been listed in the directory - "scricts/"
 
