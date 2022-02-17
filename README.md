@@ -8,7 +8,7 @@
 
 # Introduction
 
-In this study, we used RNA-sequencing (RNA-seq) data generated in multiple normal tissues, along with the matched whole genome sequencing (WGS) data generated in blood samples from the Genotype-Tissue Expression (GTEx), and large-scale GWAS data for cancers of breast, ovary, prostate, colorectum, lung, and pancreas to conduct APA-WAS to search for susceptibility genes and loci of these common cancers. 
+In this study, we used RNA-sequencing (RNA-seq) data generated in multiple normal tissues, along with the matched whole genome sequencing (WGS) data generated in blood samples from the Genotype-Tissue Expression (GTEx), and large-scale GWAS data for cancers of breast, ovary, prostate, colorectum, lung, and pancreas to conduct APA-WAS to search for susceptibility genes and loci in these common cancers. 
 
 Xingyi Guo1,2 †, *, Jie Ping1†, Yaohua Yang1†, Xiao-ou Shu1, Wanqing Wen1, Zhishan Chen1, Ran Tao3, Guochong Jia1, Jingni He4, Qiuyin Cai1, Quan Long4,5, Graham G Giles6,  Rachel Pearlman7,  Gad Rennert8, Pavel Vodicka9, Amanda Phipps10,11, Stephen B Gruber12, Graham Casey13, Ulrike Peters10,11, Jirong Long1, Wei Zheng1, *
 
